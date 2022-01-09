@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <body>
+
+    <div class="base">
+      <div class="result">
+        <p id="res"></p>
+      </div>
+      <img id="adv" src="img/menu.png" alt="menu" onclick="">
+
+      <input class="clear" type="button" value="C" onclick='reset()'>
+      <div class="clear-one">
+        <img id="la" src="img/left-arrow.png" alt="left-arrow" onclick='clearOne()'>
+      </div>
+
+
+      <input class="numbut" type="button" value="√" onclick='myFunc("sqrt(")'>
+      <input class="numbut" type="button" value=7 onclick='myFunc(7)'>
+      <input class="numbut" type="button" value=8 onclick='myFunc(8)'>
+      <input class="numbut" type="button" value=9 onclick='myFunc(9)'>
+
+      <input class="numbut" type="button" value="+" onclick='myFunc("+")'>
+
+      <input class="numbut" type="button" value=4 onclick='myFunc(4)'>
+      <input class="numbut" type="button" value=5 onclick='myFunc(5)'>
+      <input class="numbut" type="button" value=6 onclick='myFunc(6)'>
+
+      <input class="numbut" type="button" value="-" onclick='myFunc("-")'>
+
+      <input class="numbut" type="button" value=1 onclick='myFunc(1)'>
+      <input class="numbut" type="button" value=2 onclick='myFunc(2)'>
+      <input class="numbut" type="button" value=3 onclick='myFunc(3)'>
+
+      <input class="numbut" type="button" value="*" onclick='myFunc("*")'>
+
+      <input class="numbut" type="button" value=0 onclick='myFunc(0)'>
+      <input class="numbut" type="button" value="." onclick='myFunc(".")'>
+      <input class="numbut" type="button" value="/" onclick='myFunc("/")'>
+
+      <input class="equal" type="button" value="=" onclick='calcNew()'>
+    </div>
+
+    <div id="advanced">
+      <input class="numbut" type="button" value="(" onclick='myFunc("(")'>
+      <input class="numbut" type="button" value=")" onclick='myFunc(")")'>
+      <input class="numbut" style="font-size:30px;" type="button" value="1/x" onclick='myFunc("**(-1)")'>
+      <input class="numbut" style="font-size:30px;" type="button" value='sin' onclick='myFunc("sin(")'>
+      <input class="numbut" style="font-size:30px;" type="button" value='cos' onclick='myFunc("cos(")''>
+    </div>
+
+  </body>
+
+  <script src='main.js'></script>
+</html>
